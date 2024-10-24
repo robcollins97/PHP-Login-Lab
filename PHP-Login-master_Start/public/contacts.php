@@ -8,22 +8,30 @@
       <div class="header clearfix">
         <nav>
           <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="contacts.php">Contact</a></li>
+              <li><a href="index.php">Home</a></li>
+              <li><a href="about.php">About</a></li>
+              <li><a href="contacts.php">Contact</a></li>
+              <li><a href="discover.php">Discover</a></li>
           </ul>
         </nav>
         <h3 class="text-muted">PHP Login exercise - Contacts page</h3>
       </div>
 
         <div class="mainarea">
-            <h1>Title </h1>
-            <p class="lead">This is where we will put the logout button</p>
+    <div class="mainarea">
+        <h1>
+            Status: You are logged in <?php echo $_SESSION['Username'];?>
+        </h1>
+        <p class="lead">
+            This is where we will put the logout button
+        </p>
 
-            <form action="" method="post" name="Logout_Form" class="form-signin">
-                <button name="Submit" value="Logout" class="button" type="submit">Log out</button>
-            </form>
-        </div>
+        <form action="logout.php" method="post" name="Logout_Form"
+              class="form-signin">
+            <button name="Submit" value="Logout" class="button"
+                    type="submit">Log out</button>
+        </form>
+    </div>
 
       <div class="row marketing">
         <div>
