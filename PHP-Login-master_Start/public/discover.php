@@ -8,6 +8,7 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="contacts.php">Contact</a></li>
+                <li><a href="register.php">Register</a></li>
                 <li><a href="discover.php">Discover</a></li>
 
             </ul>

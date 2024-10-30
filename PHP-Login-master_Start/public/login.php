@@ -11,6 +11,7 @@
     <div class="header clearfix">
         <nav>
             <ul>
+                <li><a href="register.php">Register</a></li>
                 <li><a href="discover.php">Discover</a></li>
             </ul>
         </nav>

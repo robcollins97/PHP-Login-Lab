@@ -1,5 +1,10 @@
 <?php
 
-/* Define username and password */
-$Username = "Steve";
-$Password = "pass";
+
+$configVars = array(
+    'database_dsn'  => 'mysql:dbname=lab1;host=localhost',
+    'database_user' => 'root',
+    'database_pass' => '12345678',
+);
+
+return $configVars;

@@ -13,17 +13,26 @@
             </ul>
         </nav>
         <h3 class="text-muted">PHP Login exercise - Discover page</h3>
-    </div>
-    <div class="mainarea">
-        <h1>
-            Discover page!
-        </h1>
-    </div>
-    <div class="row marketing">
-        <div>
-            <h4>Discover page</h4>
-            <p>Some content goes here. Some content goes here. Some content goes here. Some content goes here. Some content goes here. Some content goes here. Some content goes here. Some content goes here. Some content goes here. Some content goes here. Some content goes here. Some content goes here. Some content goes here. Some content goes here. Some content goes here. Some content goes here. Some content goes here. Some content goes here. Some content goes here. Some content goes here. Some content goes here. </p>
-
+    </div>    <form action="" method="post" name="Register_Form" class="form-register">
+        <h2 class="form-register-heading">Please Register Here!</h2>
+        <label for="inputUsername" >Username</label>
+        <input name="Username" type="username" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+        <label for="inputPassword">Password</label>
+        <input name="Password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
         </div>
+        <button name="Submit" value="Login" class="button" type="submit">Register</button>
+
+    </form>
+    <?php
+    require ('functions.php');
+
+    register($_POST['Username'],$_POST['Password']);
+    ?>
+</div>
+</body>
 
         <?php require_once '../template/footer.php';?>
